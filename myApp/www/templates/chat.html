@@ -1,0 +1,10 @@
+<ion-view view-title="Chat">
+    <ion-content>
+        <input type="text" ng-model="message">
+        <button ng-click="vm.send(message)" type="button">Send</button>
+        <p ng-repeat="message in vm.messages">
+            {{ message.text }}<br/>
+            from {{ message.user }}
+        </p>
+    </ion-content>
+</ion-view>
